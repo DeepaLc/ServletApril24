@@ -52,7 +52,9 @@ public class ViewData extends HttpServlet {
 			PreparedStatement ps = con.prepareStatement("select * from register");
 			int count =1;
 			ResultSet rs = ps.executeQuery();
+		
 			while (rs.next()) {
+				
 				out.println("<tr>");
 				out.println("<td>");				
 				out.println(count++);
@@ -75,6 +77,7 @@ public class ViewData extends HttpServlet {
 				
 				out.println("</td>");
 				out.println("</tr>");
+				
 			}
 		} catch (Exception e) {
 

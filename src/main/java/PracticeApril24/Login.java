@@ -63,8 +63,9 @@ public class Login extends HttpServlet {
             	response.sendRedirect("ViewData");
             	
 //            	RequestDispatcher rd = request.getRequestDispatcher("/profile.html");
-//            	rd.include(request, response);
+//          	rd.include(request, response);
             	
+   //         	response.sendRedirect("deleteData");
             	
             }else {
             	out.print("<h3 style='color:red'> Email id and password didn't matched </h3>");
